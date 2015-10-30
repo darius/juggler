@@ -20,11 +20,11 @@ function onLoad() {
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
-var canvasBounds = canvas.getBoundingClientRect();
 var width        = canvas.width;
 var height       = canvas.height;
 
 function mouseCoords(event) {
+    var canvasBounds = canvas.getBoundingClientRect();
     return {x: event.clientX - canvasBounds.left,
             y: event.clientY - canvasBounds.top};
 }
